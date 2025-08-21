@@ -27,7 +27,7 @@ class LoggerManager:
         """加载日志配置文件"""
         if config_path is None:
             # 自动查找配置文件
-            current_dir = Path(__file__).parent.parent
+            current_dir = Path(__file__).parent.parent.parent
             config_path = current_dir / "config" / "logging_config.yaml"
         
         if not os.path.exists(config_path):
